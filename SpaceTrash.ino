@@ -1656,7 +1656,7 @@ void loop(void) {
 
   for (;;) {
 
-    st_Step(y, /* is_auto_fire */ 1, /* is_fire */ digitalRead(pin_fire));
+    st_Step(y, /* is_auto_fire */ 0, /* is_fire */ digitalRead(pin_fire));
     u8g2.firstPage();
     do {
       st_Draw(0);
